@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{movie}}{% endblock title %}
+{% block content %}
+            <h2>{{movie}}</h2>
+            <p>Has elegido el pokemon: <strong>{{ movie | capfirst }}</strong></p>
+            <h3>Características:</h3>
+            <ul>
+                <li>Año de publicación: {{movie.year}}.</li>
+                <li>Director: {{movie.director}} </li>
+                <li>Genero: {{genere.height}} </li>
+                <li>Sinopsis: {{sinopsis.height}} </li>
+            </ul>
+            <a href="/">Regresar</a>
+    {% endblock content %}
